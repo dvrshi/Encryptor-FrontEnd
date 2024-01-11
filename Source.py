@@ -150,15 +150,15 @@ class Encrypto:
                     outfile.write(tag)
                     outfile.write(ciphertext)
                     
-                bar = Bar('Encrypting File', max=2)
-                for i in range(2):
-                    # Do some work
-                    sleep(1)
-                    bar.next()
-                bar.finish()
-                infile.close()
-                os.remove("PASS.txt")
-                print("Successfully completed encrypting the file!")
+            bar = Bar('Encrypting File', max=2)
+            for i in range(2):
+                # Do some work
+                sleep(1)
+                bar.next()
+            bar.finish()
+            infile.close()
+            os.remove("PASS.txt")
+            print("Successfully completed encrypting the file!")
 
 
     #Decrypting the data
